@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/editUsernameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text = "Username"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width= "match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:hint="Enter Name "/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width = "300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="150dp">
+        <ImageView
+            android:id= "@+id/settingProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/img"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id= "@+id/editProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@id/cardview"
+        android:text = "edit profile picture "
+        android:layout_margin="10dp"/>
+
+
+
+
+</RelativeLayout>
